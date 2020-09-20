@@ -8,8 +8,13 @@ Functionality:
 Supports En and Ar languages
 Language is persisted in cookie now. Later I will read from URL
 
+When language is changed, I refresh the browser to show language changes
+
+
 Github repo:
 ------------
+https://github.com/jsphkhan/react-language-example
+
 
 Tutorial:
 ----------

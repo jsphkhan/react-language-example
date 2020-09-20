@@ -1,12 +1,14 @@
 export default {
     "en" : {
-        "name" : "Name",
-        "description1" : "I am a computer engineer and work with great enthusiasm.",
-        "description2" : "You can work with me too."
+        "name" : "My name is: ",
+        "language" : "Language",
+        "description1" : "This is a simple internationalization example",
+        "description2" : "Well organized and easy to understand Web building tutorials."
     },
     "ar" : {
-        "name" : "Name",
-        "description1" : "أنا مهندس كمبيوتر وأعمل بحماس كبير.",
-        "description2" : "يمكنك العمل معي أيضًا."
+        "name" : "اسمي هو: ",
+        "language" : "لغة",
+        "description1" : "هذا مثال بسيط للتدويل",
+        "description2" : "دروس بناء الويب جيدة التنظيم وسهلة الفهم"
     }
 }
