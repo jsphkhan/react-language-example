@@ -1,0 +1,15 @@
+This is a multi lingual application example with ReactJS
+This project is created using Create React App.
+
+Command: npx create-react-app language-example
+
+Functionality:
+---------------
+Supports En and Ar languages
+Language is persisted in cookie now. Later I will read from URL
+
+Github repo:
+------------
+
+Tutorial:
+----------
