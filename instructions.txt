@@ -8,7 +8,9 @@ Functionality:
 Supports En and Ar languages
 Language is persisted in cookie now. Later I will read from URL
 
-When language is changed, I refresh the browser to show language changes
+When language is changed, I reload the browser to show language changes
+I am not using React Context or global state to manage language change.
+Language is persisted in Cookie.
 
 
 Github repo:
@@ -18,3 +20,4 @@ https://github.com/jsphkhan/react-language-example
 
 Tutorial:
 ----------
+Right to Left CSS Layouting: https://rtlstyling.com/posts/rtl-styling#basic-example-of-flipping-a-design

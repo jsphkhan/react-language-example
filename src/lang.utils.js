@@ -2,27 +2,30 @@
 import Cookies from 'js-cookie';
 import LangStrings from './lang';
 
-export const readAppLanguage = () => {
-    console.log('read app language');
-   //read from cookie
-   const cookieLang = Cookies.get('language');
-   return cookieLang;
-}
+class LangUtils {
+    language = null;
 
-export const setAppLanguage = (language) => {
-    //set the cookie
-    Cookies.set('language', language);
-}
+    readAppLanguage() {
+        //read from cookie
+        const cookieLang = Cookies.get('language') || 'en';
+        this.language = cookieLang;
+        return cookieLang;
+    }
 
-export const refreshBrowser = () => {
-    window.location.reload();
-}
+    setAppLanguage(language) {
+        //set to cookie
+        Cookies.set('language', language);
+    }
 
-export const translator = {
-    gettext: (key) => {
-        console.log(key);
-        let language = readAppLanguage() || language;
-        return LangStrings[language][key];
+    refreshBrowser() {
+        window.location.reload();
+    }
+
+    getText(key) {
+        //console.log(key);
+        return LangStrings[this.language][key];
     }
 }
+
+export default new LangUtils();
 

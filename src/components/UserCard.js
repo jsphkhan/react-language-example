@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import {translator} from '../lang.utils';
+import translator from '../lang.utils';
 
 const UserCard = () => {
-    const [data, setData] = useState('Joseph');
+    const data = 'Joseph';
     return (
-        <div>
-            <h1>{translator.gettext('name')}{data}</h1>
-            <p>
-                {translator.gettext('description1')}
-            </p>
-            <p>{translator.gettext('description2')}</p>
+        <div className="card-wrapper">
+            <div className="card-avatar"></div>
+            <div>
+                <h1>{translator.getText('name')}{' '}{data}</h1>
+                <p>
+                    {translator.getText('description1')}
+                </p>
+                <p>{translator.getText('description2')}</p>
+            </div>
         </div>
     );
 }
